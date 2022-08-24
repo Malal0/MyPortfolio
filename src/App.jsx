@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import Logo from './assets/images/JEM-Logo.svg'
+import GithubIcon from './assets/images/githubicon.svg'
+import WeblinkIcon from './assets/images/weblinkicon.svg'
+import LinkedinIcon from './assets/images/linkedinlogo.svg'
+import ToTopIcon from './assets/images/toppagebtn.svg'
 import './App.css'
 
 function App() {
@@ -30,20 +34,20 @@ function App() {
         <h3>projects</h3>
         <div className='project'>
           <h2>loteria online</h2>
-          <a href='#'><img src={Logo} className="logo" alt="Github link" /></a>
-          <a href='#'><img src={Logo} className="logo" alt="Website link" /></a>
+          <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
+          <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>
           <img src={Logo} className="logo" alt="loteria online preview" />
         </div>
         <div className='project'>
           <h2>faux gym</h2>
-          <a href='#'><img src={Logo} className="logo" alt="Github link" /></a>
-          <a href='#'><img src={Logo} className="logo" alt="Website link" /></a>
+          <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
+          <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>
           <img src={Logo} className="logo" alt="loteria online preview" />
         </div>
         <div className='project'>
           <h2>the best password generator</h2>
-          <a href='#'><img src={Logo} className="logo" alt="Github link" /></a>
-          <a href='#'><img src={Logo} className="logo" alt="Website link" /></a>
+          <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
+          <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>
           <img src={Logo} className="logo" alt="loteria online preview" />
         </div>
       </div>
@@ -102,8 +106,8 @@ function App() {
         </form>
         <div>
           <div>
-            <a href='#'><img src={Logo} className="logo" alt="Github link" /></a>
-            <a href='#'><img src={Logo} className="logo" alt="LinkedIn link" /></a>
+            <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
+            <a href='#'><img src={LinkedinIcon} className="logo" alt="LinkedIn link" /></a>
           </div>
           <div>
             <button>send</button>
@@ -111,7 +115,7 @@ function App() {
         </div>
       </div>
       <div className='BackToTop'>
-        <a href='#'><img src={Logo} className="logo" alt="Top of page" /></a>
+        <a href='#'><img src={ToTopIcon} className="logo" alt="Top of page" /></a>
       </div>
     </>
   )
