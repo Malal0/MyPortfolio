@@ -1,5 +1,5 @@
 .Hero-Section {
-    height: 43.75em;
+    height: 90vh;
     padding-top: 26px;
     background-image: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.45), var(--dark-grey) 90%), url('https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;

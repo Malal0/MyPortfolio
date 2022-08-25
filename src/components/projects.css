@@ -1,0 +1,61 @@
+.Projects-Section {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.Projects-Section h3 {
+    position: relative;
+}
+
+.Projects-Section h3::after {
+    content: 'PROJECTS';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -10;
+    transform: scale(7);
+    opacity: .1;
+    transform: translateX(50%);
+}
+
+.project {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-cta {
+    border: 1px solid yellow;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-cta h2 {
+    width: clamp(3em, 30%, 5.5em);
+    text-align: start;
+}
+
+.preview {
+    aspect-ratio: 16/9;
+    height: 48em;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(.5);
+    transform: translateX(19%);
+}
+
+.preview:hover {
+    filter: brightness(1);
+}
+
+.Projects-Section .logo {
+    height: 4.4375em;
+    aspect-ratio: 1;
+}
