@@ -86,6 +86,10 @@ img {
   max-width: 100%;
 }
 
+.side-margin {
+  margin: 0 8.8125em;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark-grey);
