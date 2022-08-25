@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    height: 5.3125em;
+    width: auto;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+}
+
+.hero-main img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 22.0625em;
+}

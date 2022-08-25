@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/images/JEM-Logo.svg'
 import ProPic from '../assets/images/ProfilePic.png'
+import './hero.css'
 
 function Hero() {
     return (

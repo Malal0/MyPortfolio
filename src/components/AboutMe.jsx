@@ -14,12 +14,12 @@ function AboutMe() {
             <div>
                 <h3>my hobbies</h3>
                 <ul>
-                    <li>watching how to videos</li>
-                    <li>going to the gym</li>
-                    <li>working on my car</li>
-                    <li>listening to loud music</li>
-                    <li>watching movies in my homemade cinema</li>
-                    <li>drawing, animation, and 3d sculpting</li>
+                    <li>Watching how to videos</li>
+                    <li>Going to the gym</li>
+                    <li>Working on my car</li>
+                    <li>Listening to loud music</li>
+                    <li>Watching movies in my homemade cinema</li>
+                    <li>Drawing, animation, and 3d sculpting</li>
                 </ul>
             </div>
             <div>
