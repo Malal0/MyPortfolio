@@ -13,7 +13,7 @@ function Projects() {
             <h3>projects</h3>
             <div className='project'>
                 <div className='project-cta'>
-                    <h2>loteria online</h2>
+                    <h2>loteria<br></br>online</h2>
                     <div className='cta-links'>
                         <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
                         <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>
@@ -23,7 +23,7 @@ function Projects() {
             </div>
             <div className='project'>
                 <div className='project-cta'>
-                    <h2>faux gym</h2>
+                    <h2>faux<br></br>gym</h2>
                     <div className='cta-links'>
                         <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
                         <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>
@@ -33,7 +33,7 @@ function Projects() {
             </div>
             <div className='project'>
                 <div className='project-cta'>
-                    <h2>the best password generator</h2>
+                    <h2>the best<br></br>password<br></br>generator</h2>
                     <div className='cta-links'>
                         <a href='#'><img src={GithubIcon} className="logo" alt="Github link" /></a>
                         <a href='#'><img src={WeblinkIcon} className="logo" alt="Website link" /></a>

@@ -29,17 +29,23 @@
 .project-cta {
     border: 1px solid yellow;
     position: absolute;
-    z-index: 10;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    z-index: 10;
+    /* transform: translateX(-15em); */
+    left: 0;
+    margin-left: 8.8125em;
 }
 
 .project-cta h2 {
-    width: clamp(3em, 30%, 5.5em);
+    /*2.5  fit-content  6*/
+    border: 1px solid green;
     text-align: start;
+    margin-bottom: 5rem;
+    padding: 0;
+    font-size: 8em;
 }
 
 .preview {
@@ -49,6 +55,7 @@
     object-position: top;
     filter: brightness(.5);
     transform: translateX(19%);
+    background-image: linear-gradient(90deg, red, blue);
 }
 
 .preview:hover {
@@ -58,4 +65,8 @@
 .Projects-Section .logo {
     height: 4.4375em;
     aspect-ratio: 1;
+}
+
+.cta-links a {
+    margin-right: 2.5em;
 }
