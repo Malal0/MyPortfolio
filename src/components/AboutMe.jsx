@@ -1,8 +1,5 @@
 import React from 'react'
-import Logo from '../assets/images/JEM-Logo.svg'
-import ProPic from '../assets/images/ProfilePic.png'
-import GithubIcon from '../assets/images/githubicon.svg'
-import WeblinkIcon from '../assets/images/weblinkicon.svg'
+import './about.css'
 
 function AboutMe() {
     return (
@@ -11,7 +8,7 @@ function AboutMe() {
                 <h3>who is Josué E. Martinez?</h3>
                 <p>I am a first generation U.S. Citizen, the son of two immigrants. I am a part of the Otomi tribe. When I’m not learning something new, you can usually find me helping my family fix something in my their house, anything from the T.V. source to a brand new tile floor.</p>
             </div>
-            <div>
+            <div className='hobbies'>
                 <h3>my hobbies</h3>
                 <ul>
                     <li>Watching how to videos</li>

@@ -6,6 +6,7 @@ import Photoshoplogo from '../assets/images/photoshoplogo.png'
 import Reactlogo from '../assets/images/reactlogo.png'
 import Figmalogo from '../assets/images/figmalogo.png'
 import Blenderlogo from '../assets/images/blenderlogo.png'
+import './skills.css'
 
 function Skills() {
     return (
