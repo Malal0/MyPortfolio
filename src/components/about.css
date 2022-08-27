@@ -7,3 +7,8 @@
     text-align: center;
     padding: 2em;
 }
+
+.AboutMe-Section .short-desc h3::after {
+    content: 'WHO AM I?';
+    background-color: #ffffff;
+}

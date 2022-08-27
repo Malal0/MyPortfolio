@@ -4,7 +4,7 @@ import './about.css'
 function AboutMe() {
     return (
         <div className='AboutMe-Section'>
-            <div>
+            <div className='short-desc'>
                 <h3>who is Josué E. Martinez?</h3>
                 <p>I am a first generation U.S. Citizen, the son of two immigrants. I am a part of the Otomi tribe. When I’m not learning something new, you can usually find me helping my family fix something in my their house, anything from the T.V. source to a brand new tile floor.</p>
             </div>
