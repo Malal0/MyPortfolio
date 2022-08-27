@@ -5,17 +5,16 @@
 
 .Projects-Section h3 {
     position: relative;
+    padding-top: 6.5em;
 }
 
 .Projects-Section h3::after {
     content: 'PROJECTS';
     position: absolute;
-    left: 50%;
-    top: 0;
+    text-align: center;
     z-index: -10;
-    transform: scale(7);
+    transform: scale(8);
     opacity: .1;
-    transform: translateX(50%);
 }
 
 .project {
@@ -27,7 +26,7 @@
 }
 
 .project-cta {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -40,8 +39,7 @@
 }
 
 .project-cta h2 {
-    /*2.5  fit-content  6*/
-    border: 1px solid green;
+    /* border: 1px solid green; */
     text-align: start;
     margin-bottom: 5rem;
     padding: 0;
@@ -53,13 +51,12 @@
     height: 48em;
     object-fit: cover;
     object-position: top;
-    filter: brightness(.5);
+    filter: brightness(.3);
     transform: translateX(19%);
-    background-image: linear-gradient(90deg, red, blue);
 }
 
 .preview:hover {
-    filter: brightness(1);
+    filter: brightness(.85);
 }
 
 .Projects-Section .logo {
@@ -69,4 +66,9 @@
 
 .cta-links a {
     margin-right: 2.5em;
+    filter: brightness(.8);
+}
+
+.cta-links a:hover {
+    filter: brightness(1);
 }
