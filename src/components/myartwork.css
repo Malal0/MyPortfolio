@@ -1,0 +1,13 @@
+.MyArtwork-Section {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.art-ex-container {
+    display: flex;
+}
+
+.art-example {
+    width: 100%;
+    border: 1px solid green;
+}
