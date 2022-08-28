@@ -3,6 +3,11 @@
     border: 1px solid red;
 }
 
+.MyArtwork-Section h3 {
+    text-align: center;
+    padding: 2em 0;
+}
+
 .art-ex-container {
     display: flex;
 }
@@ -17,4 +22,19 @@
 
 .art-example h4 {
     text-transform: uppercase;
+}
+
+.art-ex-container :first-child {
+    background-image: url(../assets/images/IMG_20220715_0001.jpg);
+    background-size: cover;
+}
+
+.art-ex-container :nth-child(2) {
+    background-image: url(../assets/images/Desktop Church Page.png);
+    background-size: cover;
+}
+
+.art-ex-container :nth-child(3) {
+    background-image: url(../assets/images/Doughnut Render.png);
+    background-size: cover;
 }
