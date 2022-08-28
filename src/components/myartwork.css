@@ -10,4 +10,11 @@
 .art-example {
     width: 100%;
     border: 1px solid green;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.art-example h4 {
+    text-transform: uppercase;
 }
