@@ -91,6 +91,19 @@ img {
   margin: 0 8.8125em;
 }
 
+.BackToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+  opacity: .1;
+  transition: 300ms;
+}
+
+.BackToTop:hover {
+  opacity: 1;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark-grey);
