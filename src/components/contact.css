@@ -1,5 +1,6 @@
-/* .Contact-Section {
-} */
+.Contact-Section input {
+    font-family: inherit;
+}
 
 .Contact-Section h3 {
     margin: 4em auto;
@@ -46,7 +47,6 @@
 
 .message-container {
     height: 50vh;
-    border: 1px solid greenyellow;
 }
 
 .message {
@@ -58,4 +58,29 @@
     color: var(--dark-grey);
     font-family: inherit;
     font-size: 24px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-block: 7.5em;
+}
+
+.buttons-container .links {
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    left: 0;
+    margin-left: 145px;
+}
+
+.buttons-container .links>*:hover {
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
+}
+
+.buttons-container button:hover {
+    background-color: #fff;
+    /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.25); */
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
 }

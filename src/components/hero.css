@@ -12,10 +12,14 @@
     align-items: center;
 }
 
-.logo {
+.navbar .logo {
     height: 5.3125em;
     width: auto;
     object-fit: contain;
+}
+
+.navbar .logo:hover {
+    filter: drop-shadow(0 0 20px #ffffff) brightness(2);
 }
 
 ul {

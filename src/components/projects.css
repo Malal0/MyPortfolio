@@ -69,5 +69,5 @@
 }
 
 .cta-links a:hover {
-    filter: brightness(1);
+    filter: brightness(1) drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
 }

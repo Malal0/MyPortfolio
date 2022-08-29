@@ -1,4 +1,9 @@
-.Skills-Section {
+.Skills-Section h3 {
+    text-align: center;
+    padding-block: 100px;
+}
+
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 70px;

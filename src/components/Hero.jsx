@@ -9,7 +9,9 @@ function Hero() {
     return (
         <div className="Hero-Section">
             <div className='navbar side-margin'>
-                <img src={Logo} className="logo" alt="Logo" />
+                <div className='logo'>
+                    <a href=''><img src={Logo} className="logo" alt="Logo" /></a>
+                </div>
                 <nav>
                     <ul>
                         <a href='#'><li>home</li></a>
