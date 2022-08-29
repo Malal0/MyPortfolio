@@ -24,7 +24,7 @@ function Contact() {
                 <div className='flex-c'>
                     <label>message</label>
                     <div className='message-container'>
-                        <textarea className='message'></textarea>
+                        <textarea className='message' placeholder='Hello'></textarea>
                     </div>
                 </div>
             </form>
