@@ -1,3 +1,49 @@
-.Contact-Section {
-    display: none;
+/* .Contact-Section {
+} */
+
+.Contact-Section h3 {
+    margin: 4em auto;
+    text-align: center;
+}
+
+.Contact-Section h3::after {
+    content: "LET' S TALK";
+    opacity: .3;
+    position: absolute;
+}
+
+.Contact-Section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-Section .flex-c {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Contact-Section .flex-r {
+    display: flex;
+    justify-content: space-between;
+    gap: 12em;
+    margin-bottom: 9em;
+}
+
+.Contact-Section input {
+    background-color: var(--dim-white);
+    padding: 42px;
+    font-size: 24px;
+    color: var(--dark-grey);
+    outline: none;
+    border: 0;
+}
+
+.Contact-Section label {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.message {
+    height: 50vh;
 }

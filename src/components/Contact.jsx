@@ -9,13 +9,22 @@ import './contact.css'
 function Contact() {
     return (
         <div className='Contact-Section'>
+            <h3>contact me</h3>
             <form>
-                <label>full name</label>
-                <input type='text'></input>
-                <label>email</label>
-                <input type='text'></input>
-                <label>message</label>
-                <input type='text'></input>
+                <div className='flex-r'>
+                    <div className='flex-c'>
+                        <label>full name</label>
+                        <input type='text'></input>
+                    </div>
+                    <div className='flex-c'>
+                        <label>email</label>
+                        <input type='text'></input>
+                    </div>
+                </div>
+                <div className='flex-c'>
+                    <label>message</label>
+                    <input type='text' className='message'></input>
+                </div>
             </form>
             <div>
                 <div>
