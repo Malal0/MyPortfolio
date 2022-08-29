@@ -4,6 +4,7 @@ import ProPic from '../assets/images/ProfilePic.png'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import LinkedinIcon from '../assets/images/linkedinlogo.svg'
+import './contact.css'
 
 function Contact() {
     return (

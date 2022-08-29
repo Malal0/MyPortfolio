@@ -10,13 +10,13 @@ function MyArtwork() {
         <div className='MyArtwork-Section'>
             <h3>my artwork</h3>
             <div className='art-ex-container'>
-                <div className='art-example'>
+                <div className='art-example first'>
                     <h4>2d art</h4>
                 </div>
-                <div className='art-example'>
+                <div className='art-example second'>
                     <h4>figma designs</h4>
                 </div>
-                <div className='art-example'>
+                <div className='art-example third'>
                     <h4>3d art</h4>
                 </div>
             </div>
