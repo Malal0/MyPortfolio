@@ -3,6 +3,10 @@
     aspect-ratio: 1;
     border: 2px solid var(--dim-white);
     animation: spin 10s infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 @keyframes spin {
