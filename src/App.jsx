@@ -12,6 +12,7 @@ import AboutMe from './components/AboutMe'
 import MyArtwork from './components/MyArtwork'
 import Contact from './components/Contact'
 import TopOfPageBtn from './components/TopOfPageBtn'
+import Cursor from './components/Cursor'
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <MyArtwork />
       <Contact />
       <TopOfPageBtn />
+      <Cursor />
     </div>
   )
 }

@@ -1,8 +1,5 @@
 import React from 'react'
-import Logo from '../assets/images/JEM-Logo.svg'
-import ProPic from '../assets/images/ProfilePic.png'
 import GithubIcon from '../assets/images/githubicon.svg'
-import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import LinkedinIcon from '../assets/images/linkedinlogo.svg'
 import './contact.css'
 
@@ -24,7 +21,7 @@ function Contact() {
                 <div className='flex-c'>
                     <label>message</label>
                     <div className='message-container'>
-                        <textarea className='message' placeholder='Hello World.'></textarea>
+                        <textarea className='message' placeholder='Hello Dev!'></textarea>
                     </div>
                 </div>
             </form>
