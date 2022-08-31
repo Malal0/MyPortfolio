@@ -5,9 +5,10 @@ function Cursor() {
     const cursor = document.querySelector('.Cursor');
 
     addEventListener('mousemove', e => {
-        // console.log(e.clientX, e.clientY);
-        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
-        // console.log(cursor.clientLeft, cursor.clientTop);
+        cursor.style.top = `${e.pageY - cursor.clientHeight / 2}px`
+        cursor.style.left = `${e.pageX - cursor.clientWidth / 2}px`
+
+        console.log(e.pageX, e.pageY);
     })
 
     return (
