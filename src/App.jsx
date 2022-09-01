@@ -12,12 +12,11 @@ import './components/cursor.css'
 import './App.css'
 
 function App() {
-  // const [] = useState({ x: 0, y: 0 });
-
   const cursor = document.querySelector('.Cursor');
 
   //  code here
 
+  const [cursorVariant, setCursorVariant] = useState("default");
   const [cursorCords, setCursorCords] = useState({
     x: 0,
     y: 0
@@ -41,7 +40,15 @@ function App() {
   const variants = {
     default: {
       x: cursorCords.x,
-      y: cursorCords.y
+      y: cursorCords.y,
+      rotate: 360,
+      delay: 2,
+      duration: 5
+    },
+    initial: {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2,
+      rotate: 0,
     }
   }
 
@@ -56,10 +63,10 @@ function App() {
       <MyArtwork />
       <Contact />
       <TopOfPageBtn />
-      {/* <motion.Cursor /> */}
       <motion.div
         className='Cursor'
         variants={variants}
+        initial="initial"
         animate="default"
       />
     </div>
