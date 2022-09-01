@@ -40,15 +40,7 @@ function App() {
   const variants = {
     default: {
       x: cursorCords.x,
-      y: cursorCords.y,
-      rotate: 360,
-      delay: 2,
-      duration: 5
-    },
-    initial: {
-      x: window.innerWidth / 2,
-      y: window.innerHeight / 2,
-      rotate: 0,
+      y: cursorCords.y
     }
   }
 
@@ -66,7 +58,6 @@ function App() {
       <motion.div
         className='Cursor'
         variants={variants}
-        initial="initial"
         animate="default"
       />
     </div>
