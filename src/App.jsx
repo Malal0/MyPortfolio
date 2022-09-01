@@ -12,9 +12,7 @@ import './components/cursor.css'
 import './App.css'
 
 function App() {
-  const cursor = document.querySelector('.Cursor');
-
-  //  code here
+  const cursor = document.querySelector('.Cursor'); //  ref to cursor div
 
   const [cursorVariant, setCursorVariant] = useState("default");
   const [cursorCords, setCursorCords] = useState({
@@ -37,28 +35,52 @@ function App() {
     }
   }, []);
 
+  //  variants for cursor below
   const variants = {
     default: {
       x: cursorCords.x,
       y: cursorCords.y
+    },
+    link: {
+      x: cursorCords.x,
+      y: cursorCords.y,
+      height: '5em',
+      backgroundColor: 'hsla(0, 0%, 0%, .2)',
+      mixBlendMode: 'difference',
+      backdropFilter: 'blur(1px)'
     }
   }
+  //  variants for cursor above
 
-  //  code here
+  //code here
+
+  const linkEnter = () => setCursorVariant("link");
+  const linkLeave = () => setCursorVariant("default");
+
+  //code here
 
   return (
     <div className='App'>
-      <Hero />
-      <Projects />
+      <Hero
+        handleMouseEnter={linkEnter}
+        handleMouseLeave={linkLeave}
+      />
+      <Projects
+        handleMouseEnter={linkEnter}
+        handleMouseLeave={linkLeave}
+      />
       <Skills />
       <AboutMe />
       <MyArtwork />
       <Contact />
-      <TopOfPageBtn />
+      <TopOfPageBtn
+        handleMouseEnter={linkEnter}
+        handleMouseLeave={linkLeave}
+      />
       <motion.div
         className='Cursor'
         variants={variants}
-        animate="default"
+        animate={cursorVariant}
       />
     </div>
   )

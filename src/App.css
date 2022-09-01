@@ -34,3 +34,7 @@
     animation: logo-spin infinite 20s linear;
   }
 } */
+
+body {
+  cursor: none;
+}

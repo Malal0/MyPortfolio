@@ -2,9 +2,9 @@ import React from 'react'
 import ToTopIcon from '../assets/images/toppagebtn.svg'
 
 
-function TopOfPageBtn() {
+function TopOfPageBtn({ handleMouseEnter, handleMouseLeave }) {
     return (
-        <div className='BackToTop'>
+        <div className='BackToTop' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <a href='#'><img src={ToTopIcon} className="logo" alt="Top of page" /></a>
         </div>
     )

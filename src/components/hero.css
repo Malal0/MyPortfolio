@@ -7,9 +7,13 @@
 }
 
 .navbar {
+    position: fixed;
+    top: 1em;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 101;
 }
 
 .navbar .logo {

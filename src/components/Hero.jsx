@@ -3,22 +3,22 @@ import Logo from '../assets/images/JEM-Logo.svg'
 import ProPic from '../assets/images/ProfilePic.png'
 import './hero.css'
 
-function Hero() {
+function Hero({ handleMouseEnter, handleMouseLeave }) {
     const link = 'https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=300'
 
     return (
         <div className="Hero-Section">
             <div className='navbar side-margin'>
                 <div className='logo'>
-                    <a href=''><img src={Logo} className="logo" alt="Logo" /></a>
+                    <a href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
                 </div>
                 <nav>
                     <ul>
-                        <a href='#'><li>home</li></a>
-                        <a href='#'><li>projects</li></a>
-                        <a href='#'><li>about</li></a>
-                        <a href='#'><li>figma designs</li></a>
-                        <a href='#'><li>contact</li></a>
+                        <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>
+                        <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>projects</li></a>
+                        <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>about</li></a>
+                        <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>figma designs</li></a>
+                        <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
                     </ul>
                 </nav>
             </div>
