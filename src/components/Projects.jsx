@@ -1,10 +1,9 @@
 import React from 'react'
-import Logo from '../assets/images/JEM-Logo.svg'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import LoteriaPreview from '../assets/images/dele.png'
+import LoteriaPreview from '../assets/images/loteriaprev.png'
 import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
-import PasswordgeneratorPreview from '../assets/images/pw image.png'
+import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
