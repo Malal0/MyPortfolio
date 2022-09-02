@@ -12,8 +12,6 @@ import './components/cursor.css'
 import './App.css'
 
 function App() {
-  const cursor = document.querySelector('.Cursor'); //  ref to cursor div
-
   const [cursorVariant, setCursorVariant] = useState("default");
   const [cursorCords, setCursorCords] = useState({
     x: 0,
@@ -23,8 +21,8 @@ function App() {
   useEffect(() => {
     const mouseMove = e => {
       setCursorCords({
-        x: e.clientX - cursor.clientHeight / 2,
-        y: e.clientY - cursor.clientWidth / 2
+        x: e.clientX,
+        y: e.clientY
       })
     }
 
@@ -38,13 +36,14 @@ function App() {
   //  variants for cursor below
   const variants = {
     default: {
-      x: cursorCords.x,
-      y: cursorCords.y
+      x: cursorCords.x - 24,
+      y: cursorCords.y - 24,
+      height: '48px'
     },
     link: {
-      x: cursorCords.x,
-      y: cursorCords.y,
-      height: '5em',
+      x: cursorCords.x - 40,
+      y: cursorCords.y - 40,
+      height: '80px',
       backgroundColor: 'hsla(0, 0%, 0%, .2)',
       mixBlendMode: 'difference',
       backdropFilter: 'blur(1px)'
