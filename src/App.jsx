@@ -7,12 +7,14 @@ import AboutMe from './components/AboutMe'
 import MyArtwork from './components/MyArtwork'
 import Contact from './components/Contact'
 import TopOfPageBtn from './components/TopOfPageBtn'
-// import Cursor from './components/Cursor'
+import TopCorner from './assets/images/topleftcorner.svg'
+import BottomCorner from './assets/images/bottomrightcorner.svg'
 import './components/cursor.css'
 import './App.css'
 
 function App() {
-  const [cursorVariant, setCursorVariant] = useState("default");
+  const [cursorOuterVariant, setCursorOuterVariant] = useState("defaultOuter");
+  const [cursorInnerVariant, setCursorInnerVariant] = useState("default");
   const [cursorCords, setCursorCords] = useState({
     x: 0,
     y: 0
@@ -35,12 +37,25 @@ function App() {
 
   //  variants for cursor below
   const variants = {
-    default: {
+    defaultInner: {
+      x: cursorCords.x - 6,
+      y: cursorCords.y - 6,
+      height: '12px',
+      filter: 'drop-shadow( 0 0 20px white)'
+    },
+    linkInner: {
+      x: cursorCords.x - 50,
+      y: cursorCords.y - 50,
+      height: '100px',
+      filter: 'none',
+      backgroundColor: 'hsla(0, 0%, 0%, .2)'
+    },
+    defaultOuter: {
       x: cursorCords.x - 24,
       y: cursorCords.y - 24,
       height: '48px'
     },
-    link: {
+    linkOuter: {
       x: cursorCords.x - 40,
       y: cursorCords.y - 40,
       height: '80px',
@@ -53,8 +68,14 @@ function App() {
 
   //code here
 
-  const linkEnter = () => setCursorVariant("link");
-  const linkLeave = () => setCursorVariant("default");
+  const linkEnter = () => {
+    setCursorOuterVariant("linkOuter");
+    setCursorInnerVariant("linkInner");
+  };
+  const linkLeave = () => {
+    setCursorOuterVariant("defaultOuter");
+    setCursorInnerVariant("defaultInner");
+  };
 
   //code here
 
@@ -79,8 +100,17 @@ function App() {
       <motion.div
         className='Cursor'
         variants={variants}
-        animate={cursorVariant}
+        animate={cursorOuterVariant}
       />
+      <motion.div
+        className='Cursor-inner'
+        variants={variants}
+        animate={cursorInnerVariant}
+      />
+      <div className='nav-highlight-container'>
+        <img src={TopCorner} alt='topcorner' />
+        <img src={BottomCorner} alt='bottomcorner' />
+      </div>
     </div>
   )
 }

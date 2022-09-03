@@ -8,4 +8,17 @@
     border-radius: 50%;
     mix-blend-mode: difference;
     pointer-events: none;
+    transition: 100ms;
+}
+
+.Cursor-inner {
+    height: .5em;
+    background-color: #fff;
+    aspect-ratio: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
 }
