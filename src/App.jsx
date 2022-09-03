@@ -14,7 +14,7 @@ import './App.css'
 
 function App() {
   const [cursorOuterVariant, setCursorOuterVariant] = useState("defaultOuter");
-  const [cursorInnerVariant, setCursorInnerVariant] = useState("default");
+  const [cursorInnerVariant, setCursorInnerVariant] = useState("defaultInner");
   const [cursorCords, setCursorCords] = useState({
     x: 0,
     y: 0
@@ -61,7 +61,7 @@ function App() {
       height: '80px',
       backgroundColor: 'hsla(0, 0%, 0%, .2)',
       mixBlendMode: 'difference',
-      backdropFilter: 'blur(1px)'
+      backdropFilter: 'blur(2px)'
     }
   }
   //  variants for cursor above
@@ -98,7 +98,7 @@ function App() {
         handleMouseLeave={linkLeave}
       />
       <motion.div
-        className='Cursor'
+        className='Cursor-outer'
         variants={variants}
         animate={cursorOuterVariant}
       />
