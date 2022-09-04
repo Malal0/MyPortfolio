@@ -12,9 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 99; */
-    background-color: #000;
-    /* padding-top: 1em; */
 }
 
 .navbar .logo {
@@ -25,6 +22,12 @@
 
 .navbar .logo:hover {
     filter: drop-shadow(0 0 20px #ffffff) brightness(2);
+}
+
+.nav-over {
+    background-color: red;
+    z-index: 1000;
+    padding-inline: 4em;
 }
 
 ul {

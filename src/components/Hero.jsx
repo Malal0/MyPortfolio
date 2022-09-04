@@ -8,7 +8,7 @@ function Hero({ handleMouseEnter, handleMouseLeave }) {
 
     return (
         <div className="Hero-Section">
-            <div className='navbar side-margin'>
+            <div className='navbar side-margin nav-over'>
                 <div className='logo'>
                     <a href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
                 </div>
