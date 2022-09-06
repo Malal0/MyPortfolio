@@ -42,6 +42,24 @@ body {
 .nav-highlight-container {
   background-color: red;
   position: fixed;
-  top: 0;
+  top: 30px;
+  left: 30px;
+  width: 6em;
+  height: 2em;
+}
+
+.nav-highlight-container>:first-child {
+  border: 2px solid green;
+  position: absolute;
   left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.nav-highlight-container>:last-child {
+  border: 2px solid green;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
 }
