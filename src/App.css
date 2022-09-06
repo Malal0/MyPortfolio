@@ -42,8 +42,8 @@ body {
 .nav-highlight-container {
   background-color: red;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
   width: 6em;
   height: 2em;
 }

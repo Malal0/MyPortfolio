@@ -13,6 +13,7 @@ import './components/cursor.css'
 import './App.css'
 
 function App() {
+  //cursor code here
   const [cursorOuterVariant, setCursorOuterVariant] = useState("defaultOuter");
   const [cursorInnerVariant, setCursorInnerVariant] = useState("defaultInner");
   const [cursorCords, setCursorCords] = useState({
@@ -66,7 +67,6 @@ function App() {
   }
   //  variants for cursor above
 
-  //code here
 
   const linkEnter = () => {
     setCursorOuterVariant("linkOuter");
@@ -77,7 +77,7 @@ function App() {
     setCursorInnerVariant("defaultInner");
   };
 
-  //code here
+  //cursor code here
 
   return (
     <div className='App'>
@@ -107,10 +107,10 @@ function App() {
         variants={variants}
         animate={cursorInnerVariant}
       />
-      <div className='nav-highlight-container'>
+      {/* <div className='nav-highlight-container'>
         <img src={TopCorner} alt='topcorner' />
         <img src={BottomCorner} alt='bottomcorner' />
-      </div>
+      </div> */}
     </div>
   )
 }
