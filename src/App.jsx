@@ -78,6 +78,19 @@ function App() {
   };
 
   //cursor code here
+  // import ToTopIcon from '../assets/images/toppagebtn.svg'
+  // import ToTopIconHover from '../assets/images/toppagebtnhover.svg'
+  const [topBtnHover, SetTopBtnHover] = useState(false);
+
+  const toTopEnter = () => {
+    linkEnter();
+    SetTopBtnHover(true);
+  }
+
+  const toTopLeave = () => {
+    linkLeave();
+    SetTopBtnHover(false);
+  }
 
   return (
     <div className='App'>
@@ -94,8 +107,9 @@ function App() {
       <MyArtwork />
       <Contact />
       <TopOfPageBtn
-        handleMouseEnter={linkEnter}
-        handleMouseLeave={linkLeave}
+        handleMouseEnter={toTopEnter}
+        handleMouseLeave={toTopLeave}
+        icon={topBtnHover}
       />
       <motion.div
         className='Cursor-outer'
