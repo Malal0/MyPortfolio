@@ -6,22 +6,22 @@ import './hero.css'
 
 function Hero({ handleMouseEnter, handleMouseLeave }) {
     const link = 'https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=300';
-    const variants = {
-        default: {
-            height: '96px'
-        },
-        scrolled: {
-            height: '48px',
-            backgroundColor: 'black'
-        }
-    }
+    // const variants = {
+    //     default: {
+    //         height: '96px'
+    //     },
+    //     scrolled: {
+    //         height: '48px',
+    //         backgroundColor: 'black'
+    //     }
+    // }
 
     return (
         <div className="Hero-Section" >
             <motion.div
                 className='navbar'
-                variants={variants}
-                animate={cursorOuterVariant}
+            // variants={variants}
+            // animate={ }
             >
                 <div className='logo'>
                     <a href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
