@@ -37,6 +37,7 @@ a {
 a:hover {
   color: var(--hover);
   font-weight: 700;
+  cursor: none;
 }
 
 body {
@@ -80,6 +81,10 @@ button {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:hover {
+  cursor: none;
 }
 
 img {
