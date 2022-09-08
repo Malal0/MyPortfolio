@@ -8,10 +8,14 @@
 
 .navbar {
     position: fixed;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 6em;
+    top: 0;
+    padding-inline: 8em;
+    z-index: 10;
 }
 
 .navbar .logo {
@@ -22,12 +26,6 @@
 
 .navbar .logo:hover {
     filter: drop-shadow(0 0 20px #ffffff) brightness(2);
-}
-
-.nav-over {
-    /* background-color: red; */
-    z-index: 1000;
-    padding-inline: 4em;
 }
 
 ul {

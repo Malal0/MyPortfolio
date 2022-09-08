@@ -7,8 +7,6 @@ import AboutMe from './components/AboutMe'
 import MyArtwork from './components/MyArtwork'
 import Contact from './components/Contact'
 import TopOfPageBtn from './components/TopOfPageBtn'
-import TopCorner from './assets/images/topleftcorner.svg'
-import BottomCorner from './assets/images/bottomrightcorner.svg'
 import './components/cursor.css'
 import './App.css'
 
@@ -62,7 +60,8 @@ function App() {
       height: '80px',
       backgroundColor: 'hsla(0, 0%, 0%, .2)',
       mixBlendMode: 'difference',
-      backdropFilter: 'blur(2px)'
+      backdropFilter: 'blur(2px)',
+      zIndex: '0'
     }
   }
   //  variants for cursor above
@@ -77,9 +76,6 @@ function App() {
     setCursorInnerVariant("defaultInner");
   };
 
-  //cursor code here
-  // import ToTopIcon from '../assets/images/toppagebtn.svg'
-  // import ToTopIconHover from '../assets/images/toppagebtnhover.svg'
   const [topBtnHover, SetTopBtnHover] = useState(false);
 
   const toTopEnter = () => {
