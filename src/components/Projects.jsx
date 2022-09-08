@@ -3,7 +3,7 @@ import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import LoteriaPreview from '../assets/images/loteriaprev.png'
 import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
-// import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
+import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -38,7 +38,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
                         <a href='https://bestpasswordgenerator.netlify.app/' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={WeblinkIcon} className="logo-link" alt="Website link" /></a>
                     </div>
                 </div>
-                {/* <img src={PasswordgeneratorPreview} className="preview" alt="the best password generator preview" /> */}
+                <img src={PasswordgeneratorPreview} className="preview" alt="the best password generator preview" />
             </div>
         </div>
     )
